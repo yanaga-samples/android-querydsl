@@ -6,7 +6,7 @@ import org.flywaydb.core.api.migration.jdbc.JdbcMigration;
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class V2__Create_table_person implements JdbcMigration, MigrationChecksumProvider {
+public class V1__Initial_setup implements JdbcMigration, MigrationChecksumProvider {
 
 	@Override
 	public void migrate(Connection connection) throws Exception {
