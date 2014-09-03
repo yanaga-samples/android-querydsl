@@ -34,9 +34,7 @@
         <dependency>
             <groupId>org.sqldroid</groupId>
             <artifactId>sqldroid</artifactId>
-            <version>1.0.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/sqldroid-1.0.0.jar</systemPath>
+            <version>1.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.flywaydb</groupId>
@@ -70,7 +68,7 @@
                 </executions>
                 <configuration>
                     <jdbcDriver>org.sqlite.JDBC</jdbcDriver>
-                    <jdbcUrl>jdbc:sqlite:database.db</jdbcUrl>
+                    <jdbcUrl>jdbc:sqlite:${project.basedir}/database.db</jdbcUrl>
                     <packageName>me.yanaga.android.querydsl.model</packageName>
                     <beanPackageName>me.yanaga.android.querydsl.model.bean</beanPackageName>
                     <targetFolder>${project.basedir}/target/generated-sources/java</targetFolder>
